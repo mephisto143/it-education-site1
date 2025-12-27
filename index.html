@@ -56,7 +56,7 @@
         .hero-title {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero-subtitle {
@@ -73,7 +73,7 @@
             padding: 1rem 2rem;
             border-radius: 8px;
             margin: 2rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -153,7 +153,66 @@
             color: #999;
             font-size: 0.9rem;
         }
-      
+
+        /* LEARNING PATH - Day 3 (Tom) */
+        .learning-path {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .path-steps {
+            max-width: 800px;
+            margin: 2rem auto 0;
+            position: relative;
+        }
+
+        .path-steps::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 30px;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #0066cc, #0099cc);
+        }
+
+        .path-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #0066cc, #0099cc);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-content {
+            padding-top: 0.5rem;
+        }
+
+        .step-title {
+            color: #0066cc;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+    
     </style>
 </head>
 
@@ -176,13 +235,13 @@
         </ul>
     </nav>
 
-    
+
     <!-- HERO SECTION - Day 1 (Tom)
          Git Command: git commit -m "Update hero section description" -->
     <section class="hero-section">
         <h2 class="hero-title">Master Git in 7 Days!</h2>
         <p class="hero-subtitle">
-            Join our intensive bootcamp to learn Git from basic commands to advanced workflows. 
+            Join our intensive bootcamp to learn Git from basic commands to advanced workflows.
             Perfect for developers who want to collaborate effectively using version control.
         </p>
         <button style="background: white; color: #0066cc; border: none; padding: 1rem 2rem; 
@@ -190,6 +249,44 @@
             Start Learning Now
         </button>
     </section>
+
+    <!-- LEARNING PATH SECTION - Day 3 (Tom) -->
+    <section class="learning-path">
+        <h2 style="text-align: center; color: #0066cc; margin-bottom: 1rem;">
+            7-Day Git Learning Journey
+        </h2>
+        <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+            Follow this structured path from Git novice to version control expert
+        </p>
+
+        <div class="path-steps">
+            <div class="path-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">Days 0-1: Foundation</h3>
+                    <p>Git setup, basic commands (init, add, commit, push), simple workflow on main branch.</p>
+                </div>
+            </div>
+
+            <div class="path-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">Days 2-3: Branching</h3>
+                    <p>Feature branches, pull requests, merge conflicts, team collaboration strategies.</p>
+                </div>
+            </div>
+
+            <div class="path-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">Days 4-7: Advanced</h3>
+                    <p>Rebasing, stashing, cherry-picking, team simulations, and production workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- FOOTER - Day 1 (Sanya)
          Git Command: git commit -m "Update footer text" -->
     <footer class="footer">
@@ -198,7 +295,7 @@
                 <h3>IT Education</h3>
                 <p>Learn Git through hands-on, project-based training.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
@@ -208,20 +305,20 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <p>Email: info@iteducation.com</p>
                 <p>Phone: (555) 123-4567</p>
             </div>
         </div>
-        
+
         <div class="copyright">
             <p>&copy; 2024 IT Education Git Bootcamp. All rights reserved.</p>
             <p>This project demonstrates Git workflow from Day 0 to Day 7.</p>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
